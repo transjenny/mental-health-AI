@@ -7,9 +7,9 @@ def talk_loop():
         if "goodbye" in a:
             print("i hope i made you feel better")
             exit()
-        if "sos" in a:
+        elif "sos" in a:
             print("i cannot help you right now!!!\n call emergency services!!!")
-        if "idk" in a:
+        elif "idk" in a:
             if "gender" in a:
                 print(
                     "questioning your gender can be hard but remember that people are with you can help you!\n places "
@@ -18,12 +18,12 @@ def talk_loop():
             if "why" in a:
                 if "exist" in a:
                     print("you exist to make a difference! so go make one!")
-        if "questioning" in a:
+        elif "questioning" in a:
             if "gender" in a:
                 print("questioning your gender can be hard but remember that people are with you can help you!\n places "
                       "like r/lgbt and other LGBTQIA community's can help you ask about yourself.\n Good like on your "
                       "journey on gender identity!")
-        if "think im" in a:
+        elif "think im" in a:
             if "trans" in a:
                 print("its ok to think that your trans. try joining some LGBTQIA community`s and seeing what you can "
                       "do!\ngood luck being trans");
@@ -35,7 +35,7 @@ def talk_loop():
                       "do!\ngood luck being gay")
             if "stupid" in a:
                 print("there is not a thing called being 'stupid'. people are just bad at somethings")
-        if "im" in a:
+        elif "im" in a:
             if "feeling" in a:
                 if "down" in a:
                     print("I know how that feels and its bad but if you have friends they will be a good source of "
@@ -55,10 +55,12 @@ def talk_loop():
                           "but all i can say is try to get HELP. if your under 18 goto kidshelpline.\n"
                           "if your over 18 use Blue Knot Foundation Helpline!\n remember if your ever feeling feeling "
                           "suicidal call the suicide hotline they will help you!")
-            if "bad" in a:
+            elif "bad" in a:
                 if "everything" in a:
                     print("your NOT bad at everything just 'bad' at somethings and you can get better as stuff!")
-
+            else:
+                print("no answer for that submitting now")
+                print("try updating")
 print("done")
 talk_loop()
 
